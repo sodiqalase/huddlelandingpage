@@ -1,0 +1,455 @@
+@import varia
+@import basic-formating
+@import variables
+
+
+
+.huddle-hero
+  overflow: hidden
+  position: relative
+  width: 100vw
+  min-height: 120vh
+  .bg-img
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: -1
+    width: 100%
+  .bg-img-m
+    display: none
+  .huddle-overlay
+    background: $pc
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 3
+    min-height: 100vh
+    width: 100vw
+    .bg-img
+      width: 100%
+    .navigation
+      margin-top: 45px
+      .container
+        max-width: 85%
+        
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        .site-name
+          display: inline-block
+          width: 170px
+          align-self: center
+        .try
+          align-self: center
+          background-color: #fff
+          padding: 10px 50px
+          border-radius: 35px
+          box-shadow: $bss3
+          font-weight: bold
+          
+    .flex-wrapper
+      min-height: 100%
+      max-width: 85%
+      margin: 0 auto
+      margin-top: 90px
+      display: flex
+      .fleft
+        padding-top: 50px
+        flex-basis: 41.666667%
+        .hh-heading
+          font-size: 36px
+          color: $b8
+          padding-right: 5%
+        .hh-content
+          font-size: 16px
+          margin-top: 25px
+          padding-right: 10%
+          color: $g6
+        .get-started
+          display: inline-block
+          margin-top: 25px
+          padding: 15px 50px
+          border-radius: 30px
+          background: $Pink
+          font-weight: bold
+          color: $w
+          box-shadow: $bs2
+          &:hover
+            background: $Pink2
+      .fright 
+        flex-basis: 58.333333%
+        .hero-illustration
+          width: 100%
+          
+
+.vision
+  width: 100vw
+  background: $w
+  .container
+    max-width: 77%
+    margin: 0 auto
+    .vision-segment
+      border-radius: 7px
+      padding: 50px 0
+      padding-left: 80px
+      padding-right: 40px
+      margin-top: 90px
+      box-shadow: $bss3
+      width: 100%
+      .vision-df
+        display: flex
+
+        .vision-left
+          padding-top: 50px
+          flex-basis: 50%
+          .gt
+            font-size: 24px
+            color: $b8
+          .gt-content
+            margin-top: 20px
+            font-size: 18px
+            color: $g6
+          
+        .vision-right
+          flex-basis: 50%
+          img
+            width: 70%
+            margin-left: auto
+    .second
+      margin-top: 40px
+      .vision-df
+        display: flex
+
+        .vision-left
+          order: 2
+          padding-top: 50px
+          flex-basis: 50%
+          .gt
+            font-size: 24px
+            color: $b8
+          .gt-content
+            margin-top: 20px
+            font-size: 18px
+            color: $g6
+          
+        .vision-right
+          order: 1
+          flex-basis: 50%
+          img
+            width: 70%
+            margin-left: 0
+            margin-right: auto
+      
+    .third
+      margin-top: 40px
+    .community
+      position: relative
+      top: 50px
+      border-radius: 8px
+      box-shadow: $bss3
+      background: $w
+      max-width: 65%
+      margin: 0 auto
+      margin-top: 30px
+      padding: 30px
+      .community-header
+        text-align: center
+        color: $b8
+        font-size: 32px
+      .community-link
+        position: relative
+        left: 50%
+        transform: translate(-50%, 0)
+        display: inline-block
+        margin-top: 25px
+        padding: 15px 50px
+        border-radius: 30px
+        background: $Pink
+        font-weight: bold
+        color: $w
+        box-shadow: $bs2
+        &:hover
+          background: $Pink2
+
+
+
+.footer
+  color: $g4
+  background: $dc
+  padding-top: 150px
+  padding-bottom: 10px
+  .container
+    max-width: 80%
+    margin: 0 auto
+    font-size: 14px
+    .footer-logo
+      width: 180px
+    .footer-df
+      display: flex
+      margin-top: 30px
+      .footer-segments
+        flex-basis: 20%
+        .footer-list
+          display: block
+          line-height: 2.2
+          &:hover
+            text-decoration: underline
+        
+        .footer-icon-wrapper
+          display: flex
+          justify-content: center
+          align-items: center
+          border: 1px solid $w
+          border-radius: 100%
+          height: 30px
+          width: 30px
+          &:hover
+            border: 1px solid $Pink
+          .footer-icon
+            width: 10px
+      .fsa
+        flex-basis: 40%
+        padding-right: 7%
+        .footer-items
+          margin-bottom: 15px
+          display: flex
+          .icon
+            position: relative
+            top: 4px
+            align-self: start
+            flex-basis: 7px
+            margin-right: 20px
+          .footer-description
+            align-self: start
+            flex-basis: 1
+      .fsd
+        flex-basis: 20%
+        padding-top: 10px
+        display: flex
+        .footer-icon-wrapper
+          margin-right: 10px
+  .copyright
+    text-align: right
+    font-size: 12px
+      
+
+        
+          
+          
+
+
+
+@media (max-width: 1178px)
+  .community-header
+    font-size: 27px !important
+@media (max-width: 1158px)
+  .vision-left
+    padding-top: 35px !important
+  .huddle-hero
+    min-height: 90vh !important
+  .fleft
+    padding-top: 25px !important
+@media (max-width: 1118px)
+  .flex-wrapper
+    margin-top: 110px !important
+  .get-started
+    margin-top: 20px !important
+    
+    padding: 10px 35px !important
+  .hh-content
+    margin-top: 15px !important
+
+  .hh-heading
+    font-size: 32px !important
+    padding-right: 10% !important
+    
+  .fleft
+    flex-basis: 50% !important
+    padding-top: 5px !important
+  .fright
+    flex-basis: 50% !important
+
+@media (max-width: 1050px)
+  .community
+    max-width: 80% !important
+  .gt-content
+    font-size: 15px !important
+  .vision
+    .container
+      max-width: 83% !important
+  .vision-left
+    padding-top: 15px !important
+  .huddle-hero
+    min-height: 80vh !important
+  
+  .navigation
+    .container
+      max-width: 90% !important
+  .flex-wrapper
+    max-width: 90% !important
+@media (max-width: 880px)
+  .vision-segment
+    padding: 40px !important
+  .huddle-hero
+    min-height: 135vh !important
+  
+  .hh-heading
+    
+    padding-right: 0% !important
+  .hh-content
+    padding: 0 7% !important
+  .navigation
+    margin-top: 30px !important
+  .flex-wrapper
+    display: block !important
+    margin-top: 70px !important
+  .fleft
+    text-align: center
+    
+    max-width: 93%
+    margin: 0 auto
+    margin-bottom: 30px
+  .fright
+    
+    max-width: 85%
+    margin: 0 auto
+
+@media (max-width: 780px)
+  .community-header
+    font-size: 24px !important
+  .community-link
+    padding: 10px 40px !important
+    font-size: 15px !important
+  .vision-left
+    padding-top: 6px !important
+  .gt-content
+    margin-top: 10px !important
+    font-size: 14px !important
+  .gt
+    font-size: 20px !important
+  .site-name
+    width: 150px !important
+  .try
+    padding: 8px 30px !important
+  .hh-heading
+    font-size: 28px !important
+  .huddle-hero
+    min-height: 125vh !important
+
+@media (max-width: 714px)
+  .fsd
+    justify-content: center
+  .footer-logo
+    width: 150px !important
+  footer
+    .container
+      max-width: 90% !important
+  .copyright
+    margin-top: 30px !important
+  .footer-segments
+    margin-bottom: 15px
+  .footer-df
+    display: block !important
+
+@media (max-width: 690px)
+  .community-link
+    
+    font-size: 14px !important
+  .community-header
+    font-size: 20px !important
+  .community
+    max-width: 100% !important
+  .vision
+    .container
+      max-width: 88% !important
+  .vision-left
+    padding-top: 0px !important
+    
+@media (max-width: 640px)
+  .second,.third
+    margin-top: 30px !important
+  .vision-right
+    margin-top: 30px !important
+    img
+      width: 80% !important
+      margin: 0 auto !important
+  .vision
+    .container
+      max-width: 75% !important
+  .vision-df
+    display: block !important
+  .vision-left
+    text-align: center !important
+
+
+
+
+
+
+@media (max-width: 500px)
+  .fsd
+    justify-content: center
+  .footer-logo
+    width: 130px !important
+  footer
+    .container
+      max-width: 90% !important
+  .copyright
+    margin-top: 30px !important
+  .footer-segments
+    margin-bottom: 15px
+  .footer-df
+    display: block !important
+  .community-link
+    padding: 7px 30px !important
+    font-size: 12px !important
+  .community-header
+    font-size: 16px !important
+  .site-name
+    width: 100px !important
+  .try
+    padding: 5px 20px !important
+    font-size: 14px !important
+  .vision-right
+    
+    img
+      width: 95% !important
+  .huddle-hero
+    min-height: 115vh !important
+    // background: url("./assets/bg-hero-desktop.svg") no-repeat center center/cover !important
+  .hh-heading
+    font-size: 24px !important
+  .hh-content
+    font-size: 14px !important
+  .vision
+    .container
+      max-width: 90% !important
+  .vision-segment
+    margin-top: 70px !important
+    border-radius: 5px !important
+  .second,.third
+    margin-top: 30px !important
+  .bg-img
+    display: none !important
+  .bg-img-m
+    display: block !important
+    width: 100% !important
+    position: absolute
+    
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: -1
+    width: 100%
+@media (max-width: 420px)
+  .huddle-hero
+    min-height: 100vh !important
+
+@media (max-width: 350px)
+  .community
+    padding: 15px !important
